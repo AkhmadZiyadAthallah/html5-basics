@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Tabel Elements</title>
-    <link rel="stylesheet" type="text/css" href="assets/style-page.css" />
-</head>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
 <body>
-    <!-- start solution -->
-    <!-- judul -->
-    Pemenang Piala Dunia Tiga Tahun Terakhir
-    <div class="section">
-        <!-- table digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat elemen <td> atau <th>  -->
-        <table>
-          <tr>
-            <!-- buat lah baris th table header-->
-            Tahun
-            Juara 1
-            Juara 2
-            Juara 3
-          </tr>
-          <tr>
-            <!-- buat lah td table data-->
-            2018
-            Prancis
-            Kroasia
-            Belgium
-          </tr>
-          <tr>
-            <!-- buat lah td table data-->
-            2014
-            Jerman
-            Argentina
-            Belanda
-          </tr>
-          <tr>
-            <!-- buat lah td table data-->
-            2010
-            Spanyol
-            Belanda
-            Jerman
-          </tr>
-        </table>
-    </div>
-    <!-- End solution -->
-    <div>
-        <button onclick="goBack()">Go Back</button>
-    </div>
 
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+<h2>A basic HTML table</h2>
+
+<table style="width:25%">
+  <tr>
+    <th>Tahun</th>
+    <th>Juara 1</th>
+    <th>Juara 2</th>
+    <th>Juara 3</th>
+  </tr>
+  <tr>
+    <td>2018</td>
+    <td>Prancis</td>
+    <td>Kroasia</td>
+    <td>Belgium</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>Jerman</td>
+    <td>Argentina</td>
+    <td>Belanda</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>Spanyol</td>
+    <td>Belanda</td>
+    <td>Jerman</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
 </body>
 </html>
